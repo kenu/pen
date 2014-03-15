@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Pen - What You See Is What You Get (WYSIWYG)</title>
+    <link rel="stylesheet" href="src/pen.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div data-toggle="pen" placeholder="im a placeholder">
+</div>
+
+
+<script src="src/pen.js"></script>
+<script src="src/markdown.js"></script>
+<script type="text/javascript">
+    var options = {
+        editor: document.querySelector('[data-toggle="pen"]'),
+        debug: true
+    };
+
+    var pen = new Pen(options);
+</script>
+</body>
+</html>
